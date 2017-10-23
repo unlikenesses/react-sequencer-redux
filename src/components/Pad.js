@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const Pad = (props) => (
-	<div 
-		className={"pad " + (props.state === 1 ? 'active' : '') + (props.pos === props.id ? ' playing' : '')}
-		onClick={() => props.toggleActive(props.rowIndex, props.id)}>
-	</div>
+const Pad = props => (
+  <div
+    className={
+      "pad " +
+      (props.state === 1 ? "active" : "") +
+      (props.pos === props.id ? " playing" : "")
+    }
+    onClick={() => props.toggleActive(props.rowIndex, props.id)}
+  />
 );
 
 export default Pad;

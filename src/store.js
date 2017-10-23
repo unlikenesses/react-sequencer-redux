@@ -1,5 +1,5 @@
-import { createStore } from 'redux';
-import sequencer from './reducers';
+import { createStore } from "redux";
+import sequencer from "./reducers";
 
 let store = createStore(reducer, { playing: false });
 
